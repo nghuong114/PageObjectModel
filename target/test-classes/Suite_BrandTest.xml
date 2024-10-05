@@ -1,0 +1,16 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite" verbose="1" parallel="tests">
+    <listeners>
+        <listener class-name="listener.TestListener"></listener>
+    </listeners>
+    <parameter name="keyword1" value="Brand nhà tui"></parameter>
+    <parameter name="keyword2" value="Brand"></parameter>
+    <parameter name="brandsName" value="CocaCola"></parameter>
+    <test name="Brand">
+        <classes>
+            <class name="huong.test.Test.BrandsTest"/>
+        </classes>
+    </test>
+
+</suite>

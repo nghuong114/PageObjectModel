@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="editedCategoryName" value="Gấu bông Labubu"/>
+  <parameter name="categoryName" value="Thú nhồi bông"/>
+  <listeners>
+    <listener class-name="listener.TestListener"/>
+  </listeners>
+  <test thread-count="5" name="AddNewCategory(failed)" verbose="0">
+    <classes>
+      <class name="huong.test.Test.CategoryInfomationTest">
+        <methods>
+          <include name="createDriver"/>
+          <include name="closeDriver"/>
+          <include name="deleteCategory_success"/>
+        </methods>
+      </class> <!-- huong.test.Test.CategoryInfomationTest -->
+    </classes>
+  </test> <!-- AddNewCategory(failed) -->
+</suite> <!-- Failed suite [Suite] -->
